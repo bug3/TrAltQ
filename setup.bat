@@ -19,3 +19,8 @@ exit /B 0
   	"%temp%\getadmin.vbs"
   	del "%temp%\getadmin.vbs"
 exit /B 0
+
+:main
+	build\setup.exe
+	Powershell.exe -Executionpolicy bypass -File ch-key-layout.ps1
+exit /B 0
