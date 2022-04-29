@@ -21,5 +21,5 @@ exit /B 0
 exit /B 0
 
 :main
-
+	Powershell.exe -Executionpolicy bypass -File set-default.ps1
 exit /B 0
