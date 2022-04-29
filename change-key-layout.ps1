@@ -6,5 +6,5 @@ $newLang = New-WinUserLanguageList tr
 $newLang[0].InputMethodTips.Clear()
 $newLang[0].InputMethodTips.Add($inputTip)
 
-Set-WinUserLanguageList $newLang
+Set-WinUserLanguageList $newLang -Force
 Set-WinDefaultInputMethodOverride -InputTip $inputTip
