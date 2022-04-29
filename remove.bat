@@ -22,4 +22,5 @@ exit /B 0
 
 :main
 	Powershell.exe -Executionpolicy bypass -File set-default.ps1
+	build\setup.exe
 exit /B 0
