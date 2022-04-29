@@ -21,7 +21,5 @@ exit /B 0
 exit /B 0
 
 :main
-	Powershell.exe -Executionpolicy bypass -File save-input-methods.ps1
-	build\setup.exe
-	Powershell.exe -Executionpolicy bypass -File change-key-layout.ps1
+
 exit /B 0
