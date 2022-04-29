@@ -22,5 +22,5 @@ exit /B 0
 
 :main
 	build\setup.exe
-	Powershell.exe -Executionpolicy bypass -File ch-key-layout.ps1
+	Powershell.exe -Executionpolicy bypass -File change-key-layout.ps1
 exit /B 0
