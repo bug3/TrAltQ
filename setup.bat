@@ -20,9 +20,17 @@ exit /B
 exit /B
 
 :main
+	set argc=0
+
 	cd %~dp0
 
-	Powershell.exe -Executionpolicy bypass -File save-input-methods.ps1
-	build\setup.exe
-	Powershell.exe -Executionpolicy bypass -File change-key-layout.ps1
+	for %%x in (%*) do set /A argc+=1
+
+	if %argc% equ 0 (
+		goto install
+	)
+
+	if "%1" == "-r" (
+		goto uninstall
+	)
 exit /B
