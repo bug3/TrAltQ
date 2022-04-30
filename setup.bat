@@ -12,8 +12,8 @@ goto check_admin
 exit /B
 
 :show_admin_control
-	echo set prompt = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
-  	echo prompt.ShellExecute "cmd.exe", "/c %~s0 %~1", "", "runas", 1 >> "%temp%\getadmin.vbs"
+	echo set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+  	echo UAC.ShellExecute "cmd.exe", "/c %~s0 %~1", "", "runas", 1 >> "%temp%\getadmin.vbs"
 
   	"%temp%\getadmin.vbs"
   	del "%temp%\getadmin.vbs"
