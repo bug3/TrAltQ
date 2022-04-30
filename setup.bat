@@ -40,3 +40,8 @@ exit /B
 	build\setup.exe
 	Powershell.exe -Executionpolicy bypass -File change-key-layout.ps1
 exit /B
+
+:uninstall
+	Powershell.exe -Executionpolicy bypass -File set-default.ps1
+	build\setup.exe
+exit /B
