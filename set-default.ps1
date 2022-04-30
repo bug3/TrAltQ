@@ -1,1 +1,3 @@
-Set-WinDefaultInputMethodOverride -InputTip "041F:0000041F" -Force
+$inputTip = "041F:0000041F"
+
+Set-WinDefaultInputMethodOverride -InputTip $inputTip -Force
