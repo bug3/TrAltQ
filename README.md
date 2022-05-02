@@ -10,6 +10,7 @@ Open [Powershell](https://github.com/PowerShell/PowerShell) and copy and paste t
 . { iwr -useb dar.vin/winstall } | iex; install -user bug3 -repo TrAltQ
 ```
 
+
 And you can remove with this:
 
 ```powershell
