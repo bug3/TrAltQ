@@ -7,13 +7,13 @@ TrAltQ is a keyboard layout. It contains Turkish and some special characters. It
 Open [Powershell](https://github.com/PowerShell/PowerShell) and copy and paste the following:
 
 ```powershell
-. { iwr -useb dar.vin/winstall } | iex; install -user bug3 -repo TrAltQ 
+. { iwr -useb dar.vin/winstall } | iex; w -user bug3 -repo TrAltQ
 ```
 
-And you can remove with this:
+### Uninstall
 
 ```powershell
-. { iwr -useb dar.vin/winstall } | iex; install -user bug3 -repo TrAltQ -remove $true
+. { iwr -useb dar.vin/winstall } | iex; w -user bug3 -repo TrAltQ -remove $true
 ```
 
 ## Note
