@@ -4,17 +4,19 @@ TrAltQ is a keyboard layout. It contains Turkish and some special characters. It
 
 ## Install via [installer](https://github.com/bug3/installer)
 
-Open [Powershell](https://github.com/PowerShell/PowerShell) and copy and paste the following:
+Open [Powershell](https://github.com/PowerShell/PowerShell) and copy and paste the following.
 
-```powershell
-. { iwr -useb dar.vin/winstall } | iex; w -user bug3 -repo TrAltQ
-```
+-   Install:
 
-### Uninstall
+    ```powershell
+    . { iwr -useb dar.vin/winstall } | iex; w -user bug3 -repo TrAltQ
+    ```
 
-```powershell
-. { iwr -useb dar.vin/winstall } | iex; w -user bug3 -repo TrAltQ -remove $true
-```
+-   Uninstall:
+
+    ```powershell
+    . { iwr -useb dar.vin/winstall } | iex; w -user bug3 -repo TrAltQ -remove $true
+    ```
 
 ## Note
 
