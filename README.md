@@ -19,3 +19,7 @@ And you can remove with this:
 ## Note
 
 The project is built using [MSKLC](https://www.microsoft.com/en-us/download/details.aspx?id=102134) and restart is recommended to avoid any errors.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
