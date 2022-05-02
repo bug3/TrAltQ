@@ -15,3 +15,7 @@ And you can remove with this:
 ```powershell
 . { iwr -useb dar.vin/winstall } | iex; install -user bug3 -repo TrAltQ -remove $true
 ```
+
+## Note
+
+The project is built using [MSKLC](https://www.microsoft.com/en-us/download/details.aspx?id=102134) and restart is recommended to avoid any errors.
