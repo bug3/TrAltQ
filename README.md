@@ -18,6 +18,12 @@ Open [Powershell](https://github.com/PowerShell/PowerShell) and copy and paste t
     . { iwr -useb dar.vin/winstall } | iex; w -user bug3 -repo TrAltQ -remove $true
     ```
 
+If script execution failed it is necessary to bypass execution policies:
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force
+```
+
 ## Note
 
 The project is built using [MSKLC](https://www.microsoft.com/en-us/download/details.aspx?id=102134) and restart is recommended to avoid any errors.
